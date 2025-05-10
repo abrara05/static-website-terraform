@@ -1,1 +1,1 @@
-# static-website--terraform
+# static-website-terraform
