@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>System Engineer Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #0f62fe;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      animation: slideInDown 1s ease-out;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #d0e2ff;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0f62fe;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #0043ce;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    .card:nth-child(even) {
+      animation-delay: 0.2s;
+    }
+
+    .card:nth-child(odd) {
+      animation-delay: 0.4s;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #0f62fe;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>John Doe - System Engineer</h1>
+    <p>Expert in Infrastructure, Cloud, Automation & Support</p>
+  </header>
+
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Automated Server Monitoring System</h3>
+      <p>Designed and deployed a monitoring stack using Prometheus, Grafana, and Node Exporter to track server performance across 150+ systems.</p>
+    </div>
+
+    <div class="card">
+      <h3>Azure AD Migration</h3>
+      <p>Led successful migration from on-prem AD to Azure Active Directory for a 500+ user organization, integrating SSO and security enhancements.</p>
+    </div>
+
+    <div class="card">
+      <h3>DevOps Pipeline Setup</h3>
+      <p>Implemented CI/CD pipeline using Jenkins, GitHub, and Docker for rapid deployment across test and production environments.</p>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2>Client & Colleague Reviews</h2>
+
+    <div class="card">
+      <p><strong>Jane Smith, IT Manager:</strong> "John is a dependable and skilled system engineer who always delivers on time with precision."</p>
+    </div>
+
+    <div class="card">
+      <p><strong>Michael Lee, Cloud Architect:</strong> "His expertise in cloud migrations and automation saved our project countless hours."</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: john.doe@example.com</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
+      <p>GitHub: <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 John Doe. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
